@@ -76,7 +76,18 @@ This analysis proves that for this large-scale, tabular data problem, **LightGBM
 
 You can replicate this experiment by following these steps:
 
-### Step 1: Download the Dataset
+### Step 1: Clone the Repository
+
+This will download all code and the large data files, which are stored using Git LFS.
+
+# Clone the repository
+
+```bash
+git clone https://github.com/Hargun-Preet/Carbon-Neutral-Fraud-Detection.git
+cd Carbon-Neutral-Fraud-Detection
+```
+
+### Step 2: Download the Dataset
 
 This script **requires** the IEEE-CIS dataset from Kaggle.
 
@@ -86,7 +97,7 @@ This script **requires** the IEEE-CIS dataset from Kaggle.
     - `train_identity.csv`
 3.  Place both `.csv` files in the **same directory** as the `run_analysis.py` script.
 
-### Step 2: Set Up Your Environment
+### Step 3: Set Up Your Environment
 
 It is highly recommended to use a Python virtual environment.
 
@@ -100,7 +111,7 @@ python -m venv venv
 # source venv/bin/activate
 ```
 
-### Step 3: Install Requirements
+### Step 4: Install Requirements
 
 Install all necessary libraries:
 
@@ -108,7 +119,13 @@ Install all necessary libraries:
 pip install pandas numpy scikit-learn tensorflow lightgbm codecarbon
 ```
 
-### Step 4: Run the Analysis
+or, Install all necessary libraries from the requirements.txt file.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 5: Run the Analysis
 
 Execute the script from your terminal. Note: This will run the full 5-fold cross-validation and will take a significant amount of time to complete.
 
