@@ -40,23 +40,25 @@ All sustainability metrics are tracked in real-time using the `codecarbon` libra
 The 5-fold cross-validation experiment was executed on a machine with a 13th Gen Intel i7 CPU and an NVIDIA RTX 4050 Laptop GPU. The aggregated results conclusively support the project's hypothesis.
 
 ### Table 3.1: Performance Results (5-Fold Cross-Validation)
+
 This table focuses on the accuracy and reliability of the models.
 
-| Metric | DNN (Baseline) | **LightGBM (Proposed)** |
-| :--- | :---: | :---: |
-| F1-Score | 0.2700 (± 0.0401) | **0.6563 (± 0.0516)** |
-| AUC | 0.8336 (± 0.0114) | **0.9689 (± 0.0028)** |
-| Recall | 0.1600 (± 0.0278) | **0.8470 (± 0.0075)** |
-| Precision | 0.8805 (± 0.0125) | 0.5387 (± 0.0696) |
+| Metric    |  DNN (Baseline)   | **LightGBM (Proposed)** |
+| :-------- | :---------------: | :---------------------: |
+| F1-Score  | 0.2700 (± 0.0401) |  **0.6563 (± 0.0516)**  |
+| AUC       | 0.8336 (± 0.0114) |  **0.9689 (± 0.0028)**  |
+| Recall    | 0.1600 (± 0.0278) |  **0.8470 (± 0.0075)**  |
+| Precision | 0.8805 (± 0.0125) |    0.5387 (± 0.0696)    |
 
 ### Table 3.2: Sustainability Results (5-Fold Cross-Validation)
+
 This table focuses on the efficiency and environmental cost of training the models.
 
-| Metric | DNN (Baseline) | **LightGBM (Proposed)** |
-| :--- | :---: | :---: |
-| Training Time (s) | 67.35 (± 16.35) | **42.08 (± 16.62)** |
-| Energy (Wh) | 1.0012 (± 0.2407) | **0.6280 (± 0.2405)** |
-| CO₂ Emissions (g) | 0.7143 (± 0.1717) | **0.4480 (± 0.1716)** |
+| Metric            |  DNN (Baseline)   | **LightGBM (Proposed)** |
+| :---------------- | :---------------: | :---------------------: |
+| Training Time (s) |  67.35 (± 16.35)  |   **42.08 (± 16.62)**   |
+| Energy (Wh)       | 1.0012 (± 0.2407) |  **0.6280 (± 0.2405)**  |
+| CO₂ Emissions (g) | 0.7143 (± 0.1717) |  **0.4480 (± 0.1716)**  |
 
 ### Key Findings
 
